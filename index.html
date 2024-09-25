@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nostra</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <!-- TAILWIND CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+
+    <!--Link Font Awesome-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+
+
+</head>
+
+<body>
+    <!-- SIGNUP OFFER -->
+    <section id="signup-container" class="bg-black text-white p-2 justify-center flex gap-20">
+        <h1 class="text-sm md:text-base">Sign Up and <strong>GET 20% OFF</strong> for your first order</h1>
+        <p id="closesignup" class="cursor-pointer text-sm md:text-base">X</p>
+    </section>
+
+    <!-- NAVIGATION BAR -->
+    <nav class="bg-slate-50 p-5 flex items-center justify-between ">
+        <h1 class="text-xl md:text-2xl font-bold">Nostra</h1>
+
+        <svg id="menu-icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
+            class="size-6 h-5 w-5 cursor-pointer md:hidden">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+        </svg>
+
+        <ul class="flex gap-10 hidden md:flex">
+            <li>
+                <a href="index.html" class="hover:underline">Home</a>
+            </li>
+            <li>
+                <a href="#newarrival" class="hover:underline">New Arrival</a>
+            </li>
+            <li>
+                <a href="#mostwanted" class="hover:underline">Most Wanted</a>
+            </li>
+            <li>
+                <a href="collections.html" class="hover:underline">Collection</a>
+            </li>
+            <li>
+                <a href="contact.html" class="hover:underline">Contact Us</a>
+            </li>
+        </ul>
+    </nav>
+
+    <!-- SIDENAV BAR -->
+    <section id="sidenavbar"  class="fixed  bg-white z-30 top-0 md:hidden" style="width: 50%; height: 100vh; right: -50%;">
+        <div class="text-right p-5">
+            <p id="close-sidenav" class="inline cursor-pointer">X</p>
+        </div>
+        <ul class="flex flex-col items-center gap-10">
+            <li>
+                <a href="index.html" class="hover:underline">Home</a>
+            </li>
+            <li>
+                <a href="#newarrival" class="hover:underline">New Arrival</a>
+            </li>
+            <li>
+                <a href="#mostwanted" class="hover:underline">Most Wanted</a>
+            </li>
+            <li>
+                <a href="collections.html" class="hover:underline">Collection</a>
+            </li>
+            <li>
+                <a href="contact.html" class="hover:underline">Contact Us</a>
+            </li>
+        </ul>
+    </section>
+
+
+    <!--Slider-->
+    <div class="slider">
+        <div class="slider-left-button">
+            <i id="slider-left-activate" class="fa-solid fa-angle-left" style="color: #ffffff;"></i>
+        </div>
+
+        <div class="slider-content absolute w-full top-10 text-white text-center flex flex-col gap-3">
+            <h1 class="text-2xl font-bold md:text-5xl">Level up your style with our</h1>
+            <h1 class="text-l md:text-3xl">Summer Collections</h1>
+            <button class="text-black bg-white p-1 rounded-lg mt-3 self-center">Shop Now <i
+                    class="fa-solid fa-arrow-right"></i></button>
+        </div>
+
+        <div class="slider-image-container">
+            <img class="slider-image" src="Images/slider-one.jpg" alt="">
+            <img class="slider-image" src="Images/slider-two.jpg" alt="">
+            <img class="slider-image" src="Images/slider-three.jpg" alt="">
+        </div>
+
+        <div class="slider-right-button">
+            <i id="slider-right-activate" class="fa-solid fa-angle-right" style="color: #ffffff;"></i>
+        </div>
+    </div>
+
+
+
+
+    <!-- BRANDS SECTION -->
+    <section>
+        <h1 class="text-xl font-bold p-5 mt-10">Brands</h1>
+        <div id="brand-container" class="grid grid-cols-5 gap-7 md:flex justify-between pl-10 pr-10">
+            <img src="Images/adidas.png" class="w-32">
+            <img src="Images/nike.png" class="w-32">
+            <img src="Images/behance.png" class="w-32">
+            <img src="Images/leaves.png" class="w-32  md:flex">
+            <img src="Images/twitch.png" class="w-32">
+
+        </div>
+    </section>
+
+    <!-- Customer Experience Section -->
+    <section id="customer-experience">
+        <div class="flex flex-wrap items-center justify-between">
+            <h1 class="p-5 font-bold text-2xl">We Provide Best <br>
+                Customer Experiences</h1>
+            <h1 class="p-5 font-normal text-right">|| We ensure that our customer have the best shopping experience
+            </h1>
+        </div>
+
+        <section id="USP" class="grid grid-cols-2 md:grid-cols-4 p-5 gap-4">
+            <div class="p-5 bg-gray-100 rounded">
+                <img src="Images/check-mark.png" class="h-7 w-7">
+                <h1 class="font-semibold">Original Products</h1>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Porro harum magnam adipisci consequuntur
+                    exercitationem </p>
+            </div>
+            <div class="p-5 bg-gray-100 rounded">
+                <img src="Images/happiness.png" class="h-7 w-7">
+                <h1 class="font-semibold">Satisfaction Guarantee</h1>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Porro harum magnam adipisci consequuntur
+                    exercitationem molestiae</p>
+            </div>
+            <div class="p-5 bg-gray-100 rounded">
+                <img src="Images/order.png" class="h-7 w-7">
+                <h1 class="font-semibold">New Arrival Everyday</h1>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Porro harum magnam adipisci consequuntur
+                    exercitationem molestiae </p>
+            </div>
+            <div class="p-5 bg-gray-100 rounded">
+                <img src="Images/delivery.png" class="h-7 w-7">
+                <h1 class="font-semibold">Fast & Free Shipping</h1>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Porro harum magnam adipisci consequuntur
+                    exercitationem </p>
+            </div>
+        </section>
+    </section>
+
+
+
+
+    <!-- NEW ARRIVALS SECTION -->
+    <section id="newarrival" class="p-5">
+        <h1 class="text-xl font-bold mt-10">New Arrivals</h1>
+
+        <div class="grid grid-cols-2 shrink gap-10 md:grid-cols-4 justify-items-center p-5">
+
+            <div class="relative grid place-items-center w-48">
+                <img class="rounded-lg w-full h-full" src="Images/Casual Summer Dress.png">
+                <div class="overlay opacity-50 bg-black w-full h-full absolute inset-0 rounded-lg"></div>
+                <button class="absolute bg-gray-100 p-1 rounded-xl">Shop Now</button>
+            </div>
+
+            <div class="relative grid place-items-center w-48">
+                <img class="rounded-lg w-full h-full" src="Images/Classic Denim Jackets.png">
+                <div class="overlay opacity-50 bg-black w-full h-full absolute inset-0 rounded-lg"></div>
+                <button class="absolute bg-gray-100 p-1 rounded-xl">Shop Now</button>
+            </div>
+
+            <div class="relative grid place-items-center w-48">
+                <img class="rounded-lg w-full h-full" src="Images/Sporty Tracksuit.png">
+                <div class="overlay opacity-50 bg-black w-full h-full absolute inset-0 rounded-lg"></div>
+                <button class="absolute bg-gray-100 p-1 rounded-xl">Shop Now</button>
+            </div>
+
+            <div class="relative grid place-items-center w-48">
+                <img class="rounded-lg w-full h-full" src="Images/Stylish Chinos.png">
+                <div class="overlay opacity-50 bg-black w-full h-full absolute inset-0 rounded-lg"></div>
+                <button class="absolute bg-gray-100 p-1 rounded-xl">Shop Now</button>
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- MOST WANTED SECTION -->
+    <section id="mostwanted" class="most-wanted p-5">
+        <h1 class="text-xl font-bold mt-10">Most Wanted</h1>
+
+        <div class="most-wanted-container p-5 justify-evenly">
+            <div class="w-48 relative">
+                <img class="rounded-lg" src="Images/MW1.png">
+                <i class="rounded-lg fa-regular fa-heart absolute z-10 bottom-2 right-2 text-2xl"></i>
+                <button
+                    class="saletag absolute top-1 left-1 pr-3 pl-3 text-white text-md bg-red-500 rounded-md">Sale</button>
+            </div>
+
+            <div class="w-48 relative">
+                <img class="rounded-lg" src="Images/MW2.png">
+                <i class="fa-regular fa-heart absolute z-10 bottom-2 right-2 text-2xl"></i>
+                <button
+                    class="saletag absolute top-1 left-1 pr-3 pl-3 text-white text-md bg-red-500 rounded-md">Sale</button>
+            </div>
+
+            <div class="w-48 relative">
+                <img class="rounded-lg" src="Images/MW3.png">
+                <i class="fa-regular fa-heart absolute z-10 bottom-2 right-2 text-2xl"></i>
+                <button
+                    class="saletag absolute top-1 left-1 pr-3 pl-3 text-white text-md bg-red-500 rounded-md">Sale</button>
+            </div>
+
+            <div class="w-48 relative">
+                <img class="rounded-lg" src="Images/MW4.png">
+                <i class="fa-regular fa-heart absolute z-10 bottom-2 right-2 text-2xl"></i>
+                <button
+                    class="saletag absolute top-1 left-1 pr-3 pl-3 text-white text-md bg-red-500 rounded-md">Sale</button>
+            </div>
+
+            <div class="w-48 relative">
+                <img class="rounded-lg" src="Images/MW5.png">
+                <i class="fa-regular fa-heart absolute z-10 bottom-2 right-2 text-2xl"></i>
+                <button
+                    class="saletag absolute top-1 left-1 pr-3 pl-3 text-white text-md bg-red-500 rounded-md">Sale</button>
+            </div>
+
+            <div class="w-48 relative">
+                <img class="rounded-lg" src="Images/MW6.png">
+                <i class="fa-regular fa-heart absolute z-10 bottom-2 right-2 text-2xl"></i>
+                <button
+                    class="saletag absolute top-1 left-1 pr-3 pl-3 text-white text-md bg-red-500 rounded-md">Sale</button>
+            </div>
+
+            <div class="w-48 relative">
+                <img class="rounded-lg" src="Images/MW7.png">
+                <i class="fa-regular fa-heart absolute z-10 bottom-2 right-2 text-2xl"></i>
+                <button
+                    class="saletag absolute top-1 left-1 pr-3 pl-3 text-white text-md bg-red-500 rounded-md">Sale</button>
+            </div>
+
+            <div class="w-48 relative">
+                <img class="rounded-lg" src="Images/MW8.png">
+                <i class="fa-regular fa-heart absolute z-10 bottom-2 right-2 text-2xl"></i>
+                <button
+                    class="saletag absolute top-1 left-1 pr-3 pl-3 text-white text-md bg-red-500 rounded-md">Sale</button>
+            </div>
+        </div>
+
+    </section>
+
+    <!-- LIMITED OFFER -->
+    <section id="limited-offer" class="p-5">
+        <div class="limited-offer-container p-5 bg-black flex gap-10 ">
+            <img class="w-96 hidden md:flex" src="Images/fashioncover.png">
+            <div class="text-white flex gap-3 flex-col justify-center">
+                <h1 class="text-5xl font-bold">Limited Offer</h1>
+                <h1 class="font-bold">35% OFF on this for the first 30 Customers</h1>
+
+                <button class="bg-gray-200 text-black text-sm inline-block px-3 py-1 rounded-lg self-start">Shop
+                    Now <i class="fa-solid fa-arrow-right"></i></button>
+            </div>
+        </div>
+    </section>
+
+    <!-- NEWSLETTER SECTION-->
+    <section class="p-5">
+        <div class="text-center mt-5 flex flex-col gap-5">
+            <h1 class="text-3xl font-bold">Join our Newsletter</h1>
+            <h1>Signup for our newsletter to get exlusive discounts,updates and more.</h1>
+            <input type="text" class="border border-black rounded-sm w-1/2 self-center ring-1 ring-black p-1">
+            <button class="text-sm bg-black text-white px-3 py-2 self-center rounded-lg">Subscribe <i
+                    class="fa-solid fa-arrow-right"></i></button>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer class="p-5 grid gap-5 bg-black text-white">
+        <h1 class="text-2xl font-bold">Nostra</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo repellat magni tenetur hic molestias itaque
+            accusamus voluptates, quibusdam rem iure error animi quisquam eveniet sit ducimus unde eligendi.
+            Voluptatibus, atque!</p>
+        <div class="social-icons ml-6">
+            <i class="fab fa-instagram"></i> <!-- Instagram -->
+            <i class="fab fa-twitter ml-6"></i> <!-- Twitter -->
+            <i class="fab fa-facebook ml-6"></i> <!-- Facebook -->
+        </div>
+        <p>@2024Nostra.com</p>
+    </footer>
+
+
+
+
+    <script src="index.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,61 @@
+.most-wanted-container {
+    display: flex;
+    gap: 140px;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+}
+
+.most-wanted-container div {
+    flex: 0 0 auto;
+}
+
+.most-wanted-container::-webkit-scrollbar {
+    display: none;
+}
+
+.filter-section::-webkit-scrollbar {
+    display: none;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+.slider {
+    overflow: hidden;
+    display: flex;
+    width: 100%;
+    position: relative;
+    border-radius: 5px;
+}
+
+.slider-image-container {
+    display: flex;
+    transition: transform 0.5s ease; /* Change to 'transform' */
+}
+
+.slider-image {
+    width: 100vw;
+}
+
+.slider-left-button {
+    position: absolute;
+    top: 35%;
+    left: 5%;
+    z-index: 1;
+    cursor: pointer; /* Add cursor to indicate clickable */
+}
+
+.slider-left-button i {
+    font-size: 10vw;
+}
+
+.slider-right-button {
+    position: absolute;
+    top: 35%;
+    right: 5%;
+    cursor: pointer; /* Add cursor to indicate clickable */
+}
+
+.slider-right-button i {
+    font-size: 10vw;
+}
